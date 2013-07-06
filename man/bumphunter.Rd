@@ -128,5 +128,7 @@ registerDoParallel()
 bumps <- bumphunter(dat$mat, design=dat$design, chr=dat$chr, pos=dat$pos,
                     cluster=dat$cluster, coef=2, cutoffQ=0.9,
                     smooth=TRUE, B=250, verbose=TRUE, smoothFunction=loessByCluster)
+# cleanup on Windows
+bumphunter:::closeSockets()
 }
 
