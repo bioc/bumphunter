@@ -16,7 +16,7 @@ importMethodsFrom(IRanges, as.list, as.matrix,
                   resize, runmed, start,
                   which, which.min, width)
 importFrom(IRanges, CharacterList, IRanges)
-importFrom(GenomeInfoDb, seqnames)
+importFrom(Seqinfo, seqnames)
 importFrom(GenomicRanges, GRanges, makeGRangesFromDataFrame)
 importMethodsFrom(GenomicRanges, sort)
 importFrom(locfit, locfit)

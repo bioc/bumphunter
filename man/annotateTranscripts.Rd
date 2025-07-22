@@ -55,7 +55,7 @@ annotateTranscripts(txdb, annotationPackage = NULL, by = c("tx","gene"), codingO
   A \code{GRanges} object with an attribute \code{description} set to
   \code{annotatedTranscripts}. The following columns are added.
   \code{seqinfo} is the information returned by
-  \code{\link[GenomeInfoDb]{seqinfo}}, \code{CSS} is the coding region
+  \code{\link[Seqinfo]{seqinfo}}, \code{CSS} is the coding region
   start, \code{CSE} is the coding region end, \code{Tx} is the transcript
   ID used in TxDb, \code{Entrez} is the Entrez ID, \code{Gene} is the gene
   symbol, \code{Refseq} is the RefSeq annotation, \code{Nexons} is the

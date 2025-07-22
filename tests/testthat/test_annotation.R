@@ -99,8 +99,8 @@ library('rtracklayer')
 gr <- import('http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/gencode.v36.annotation.gtf.gz')
 
 ## Subset and add the chromosome length info
-gr_small <- keepSeqlevels(gr, c('chrY', 'chrM'), pruning.mode = 'tidy')
-hg38_chrominfo <- getChromInfoFromUCSC("hg38")
+gr_small <- GenomeInfoDb::keepSeqlevels(gr, c('chrY', 'chrM'), pruning.mode = 'tidy')
+hg38_chrominfo <- GenomeInfoDb::getChromInfoFromUCSC("hg38")
 new_info <- hg38_chrominfo$UCSC_seqlength[match(seqlevels(gr_small),
     hg38_chrominfo$UCSC_seqlevel)]
 

@@ -1,5 +1,5 @@
 Package: bumphunter
-Version: 1.51.0
+Version: 1.51.1
 Title: Bump Hunter
 Description: Tools for finding bumps in genomic data
 Authors@R: c(person(c("Rafael", "A."), "Irizarry", role = "aut", email
@@ -14,7 +14,7 @@ Depends:
     R (>= 3.5),
     S4Vectors (>= 0.9.25),
     IRanges (>= 2.3.23),
-    GenomeInfoDb,
+    Seqinfo,
     GenomicRanges,
     foreach,
     iterators,
@@ -25,6 +25,7 @@ Suggests:
     testthat,
     RUnit,
     doParallel,
+    GenomeInfoDb,
     txdbmaker,
     org.Hs.eg.db,
     TxDb.Hsapiens.UCSC.hg19.knownGene
